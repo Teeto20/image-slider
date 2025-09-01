@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    background-color: black;
+    
+}
+.slide{
+    display: none;
+    animation: fade .6s ease-in-out;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.s1{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 50%;
+    height: 100vh;
+    
+}
+.btn{
+    position: absolute;
+    top: 45%;
+    font-size: 3rem;
+    color: whitesmoke;
+    padding: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: grey;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.prev {
+    left: 2rem;
+}
+.next {
+    right: 2rem;
+}
